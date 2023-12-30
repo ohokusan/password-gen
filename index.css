@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@400;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: Inter;
+    background: #1C1C1C;
+    color: white;
+
+}
+
+h1, h3, div, button, p, input {
+    margin: 0;
+}
+
+.container {
+    max-width: 550px;
+    margin: 50px auto 50px;
+    padding: 115px 52px;
+    background: #1F2937;
+}
+
+h1 {
+    font-family: Karla, Inter, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    text-align: left;
+    max-width: 354px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #D5D4D8;
+    margin-bottom: 51px;
+}
+
+.highlight {
+    color: #4ADF86;
+}
+
+button {
+    padding: 9px 16px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    background: #10B981;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    margin-bottom: 35px;
+}
+
+.description {
+    border-bottom: 1px solid #2F3E53;
+    margin-bottom: 35px;
+}
+
+.generated-passwords {
+    display: flex;
+    gap: 24px;
+}
+
+.password-field {
+    flex-basis: 100%;
+    background: #273549;
+    height: 39px;
+    border-radius: 6px;
+    color: #55F991;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
