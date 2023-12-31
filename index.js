@@ -25,13 +25,13 @@ function generator() {
     let password = ""
     if (btnNumbersEl.classList.contains("active") && btnCharsEl.classList.contains("active")) {
         for (let i = 0; i < passwordLength; i++) {
-            password += charactersAlphabet.concat(charactersNumbers, charactersSpecial)[getRandomChar(92)]
+            password += charactersAlphabet.concat(charactersNumbers, charactersSpecial)[getRandomChar(91)]
         }
         return password
     }
     if (btnNumbersEl.classList.contains("active") && !btnCharsEl.classList.contains("active")) {
         for (let i = 0; i < passwordLength; i++) {
-            password += charactersAlphabet.concat(charactersNumbers)[getRandomChar(63)]
+            password += charactersAlphabet.concat(charactersNumbers)[getRandomChar(62)]
         }
         return password
     }
@@ -42,7 +42,7 @@ function generator() {
         return password
     } else {
         for (let i = 0; i < passwordLength; i++) {
-            password += charactersAlphabet[getRandomChar(53)]
+            password += charactersAlphabet[getRandomChar(52)]
         }
         return password
     }
