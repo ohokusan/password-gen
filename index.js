@@ -1,7 +1,9 @@
 let charactersAlphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 let charactersNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 let charactersSpecial = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"]
-console.log(charactersAlphabet.length + charactersNumbers.length + charactersSpecial.length)
+console.log(charactersAlphabet.length)
+console.log(charactersNumbers.length)
+console.log(charactersSpecial.length)
 let passwordLength = 15;
 let password1El = document.querySelector("#password1-el")
 let password2El = document.querySelector("#password2-el")
@@ -29,18 +31,18 @@ function generator() {
     }
     if (btnNumbersEl.classList.contains("active") && !btnCharsEl.classList.contains("active")) {
         for (let i = 0; i < passwordLength; i++) {
-            password += charactersAlphabet.concat(charactersNumbers)[getRandomChar(62)]
+            password += charactersAlphabet.concat(charactersNumbers)[getRandomChar(63)]
         }
         return password
     }
     if (!btnNumbersEl.classList.contains("active") && btnCharsEl.classList.contains("active")) {
         for (let i = 0; i < passwordLength; i++) {
-            password += charactersAlphabet.concat(charactersSpecial)[getRandomChar(70)]
+            password += charactersAlphabet.concat(charactersSpecial)[getRandomChar(81)]
         }
         return password
     } else {
         for (let i = 0; i < passwordLength; i++) {
-            password += charactersAlphabet[getRandomChar(52)]
+            password += charactersAlphabet[getRandomChar(53)]
         }
         return password
     }
