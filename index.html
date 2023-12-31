@@ -8,14 +8,22 @@
             <div class="description">
                 <h1>Generate a <span class="highlight">random password</span></h1>
                 <h3>Never use an insecure password again.</h3>
-                <label for="password-length">Length:</label>
-                <input type="text" id="password-length-el" name="password-length-el" min="5" max="20" placeholder="5-20">
-                <button onclick="generatePasswords()">Generate passwords</button>
+                <div class="settings">
+                    <div class="settings-length">
+                        <label for="password-length">Length:</label>
+                        <input type="text" id="password-length-el" name="password-length-el" min="5" max="20" placeholder="5-20">
+                    </div>
+                    <div class="settings-buttons">
+                        <button class="btn-settings active" id="btn-numbers-el" onclick="toggleSettings('numbers')">numbers</button>
+                        <button class="btn-settings" id="btn-chars-el" onclick="toggleSettings('chars')">special chars</button>
+                    </div>
+                </div>
+                <button class="btn-generate" onclick="generatePasswords()">Generate passwords</button>
             </div>
             
             <div class="generated-passwords">
-                <div class="password-field" id="password1-el"></div>
-                <div class="password-field" id="password2-el"></div>
+                <div class="password-field" id="password1-el" onclick="copyToClipboard('first')"></div>
+                <div class="password-field" id="password2-el" onclick="copyToClipboard('second')"></div>
             </div>
         </div>
         

@@ -42,7 +42,47 @@ h3 {
     color: #4ADF86;
 }
 
-button {
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+.settings-length {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* gap: 16px; */
+}
+
+.settings-length * {
+    flex: 1 1 auto;
+}
+
+.settings-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.btn-settings {
+    flex: 1 1 auto;
+    color: #718198;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid #718198;
+}
+
+.btn-settings.active {
+    border: 1px solid #10B981;
+    color: #10B981;
+}
+
+.btn-generate {
     padding: 9px 16px;
     border-radius: 6px;
     box-shadow: 0px 1px 2px 0px #0000000D;
@@ -53,8 +93,8 @@ button {
     line-height: 24px;
     border: none;
     margin-bottom: 35px;
-  
     display: block;
+    width: 100%;
 }
 
 .description {
@@ -70,7 +110,7 @@ button {
 
 .password-field {
     flex: 1 0 auto;
-    min-width: 35%;
+    width: 211px;
     background: #273549;
     min-height: 39px;
     border-radius: 6px;
@@ -79,6 +119,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 4px 16px;
+    border: 1px solid #273549;
 }
 
 label {
@@ -98,7 +139,6 @@ input {
     width: 75px;
     height: 39px;
     text-align: center;
-    margin-bottom: 20px;;
 }
 
 input::placeholder {
