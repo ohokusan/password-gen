@@ -13,7 +13,7 @@ h1, h3, div, button, p, input {
 }
 
 .container {
-    max-width: 550px;
+    max-width: 400px;
     margin: 50px auto 50px;
     padding: 52px 52px;
     background: #1F2937;
